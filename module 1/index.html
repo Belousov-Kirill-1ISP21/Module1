@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя семья – мой космос</title>
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Моя семья – <span>мой космос</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="./pages/registration.html">Регистрация</a></li>
+                <li><a href="#auth">Авторизация</a></li>
+                <li><a href="./pages/account.html">Личный кабинет</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#competitions">Конкурсы</a></li>
+                <li><a href="#search">Поиск</a></li>
+                <li><a href="#footer">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle">Светлая тема</button>
+    </header>
+
+    <div class="container">
+        <section class="slider">
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <div class="slide-image"><img src="./assets/images/konkurs.webp"></div>
+                    <h3>Конкурс "Семейное созвездие"</h3>
+                    <p class="slide-description">Создайте уникальное созвездие, которое символизирует вашу семью. Участвуйте всей семьей в этом творческом конкурсе!</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <div class="slide-controls">
+                        <button class="btn btn-primary" onclick="location.href='./pages/competition.html'">Подробнее</button>
+                        <div class="slider-nav">
+                            <button class="slider-btn prev-btn">←</button>
+                            <button class="slider-btn next-btn">→</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-image"><img src="./assets/images/konkurs.webp"></div>
+                    <h3>Конкурс "Космический дизайн"</h3>
+                    <p class="slide-description">Создайте дизайн космического корабля для вашей семьи. Проявите фантазию и инженерные навыки!</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="slide-controls">
+                        <button class="btn btn-primary" onclick="location.href='./pages/competition.html'">Подробнее</button>
+                        <div class="slider-nav">
+                            <button class="slider-btn prev-btn">←</button>
+                            <button class="slider-btn next-btn">→</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-image"><img src="./assets/images/konkurs.webp"></div>
+                    <h3>Конкурс "Галактика талантов"</h3>
+                    <p class="slide-description">Продемонстрируйте таланты вашей семьи в этом увлекательном конкурсе. Пение, танцы, творчество - все приветствуется!</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <div class="slide-controls">
+                        <button class="btn btn-primary" onclick="location.href='./pages/competition.html'">Подробнее</button>
+                        <div class="slider-nav">
+                            <button class="slider-btn prev-btn">←</button>
+                            <button class="slider-btn next-btn">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-indicators" id="indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </section>
+
+        <section id="auth" class="auth-section">
+            <h2>Авторизация</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Введите ваш email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введите ваш пароль">
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+                <button type="button" class="btn-link">Забыли пароль?</button>
+            </form>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-text">
+                <h2>О нас</h2>
+                <p>Мы - организация, которая верит, что семья - это целая вселенная, полная любви, заботы и взаимопонимания. Наша миссия - укреплять семейные связи через творческие конкурсы и мероприятия.</p>
+                <p>Присоединяйтесь к нашему сообществу и откройте новые горизонты для вашей семьи!</p>
+            </div>
+            <div class="about-image"><img src="./assets/images/konkurs.webp"></div>
+        </section>
+
+        <section class="video-section">
+            <h2>Приветствие от организаторов</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="./assets/videos/hello.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section id="competitions" class="competitions-section">
+            <h2>Конкурсы</h2>
+            <div class="competitions-grid">
+                <div class="competition-card">
+                    <div class="card-image"><img src="./assets/images/konkurs.webp"></div>
+                    <h3>Космическая семья</h3>
+                    <p>Создайте костюмы на космическую тему для всей семьи.</p>
+                    <p>Записалось: 45 семей</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="location.href='./pages/competition.html'">Записаться</button>
+                </div>
+                <div class="competition-card">
+                    <div class="card-image"><img src="./assets/images/konkurs.webp"></div>
+                    <h3>Семейная галактика</h3>
+                    <p>Нарисуйте галактику, которая представляет вашу семью.</p>
+                    <p>Записалось: 32 семьи</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="location.href='./pages/competition.html'">Записаться</button>
+                </div>
+                <div class="competition-card">
+                    <div class="card-image"><img src="./assets/images/konkurs.webp"></div>
+                    <h3>Звездный танец</h3>
+                    <p>Поставьте танец на космическую тему всей семьей.</p>
+                    <p>Записалось: 28 семей</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="location.href='./pages/competition.html'">Записаться</button>
+                </div>
+                <div class="competition-card">
+                    <div class="card-image"><img src="./assets/images/konkurs.webp"></div>
+                    <h3>Планета семьи</h3>
+                    <p>Создайте макет планеты, которая представляет вашу семью.</p>
+                    <p>Записалось: 37 семей</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="location.href='./pages/competition.html'">Записаться</button>
+                </div>
+                <div class="competition-card">
+                    <div class="card-image"><img src="./assets/images/konkurs.webp"></div>
+                    <h3>Космическая история</h3>
+                    <p>Напишите историю о космическом приключении вашей семьи.</p>
+                    <p>Записалось: 41 семья</p>
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="location.href='./pages/competition.html'">Записаться</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="search" class="search-section">
+            <h2>Поиск конкурсов</h2>
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Введите название или описание конкурса">
+                <button type="submit" class="search-btn">Поиск</button>
+            </form>
+        </section>
+
+        <section class="reviews-section">
+            <h2>Отзывы</h2>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-author">
+                        <div class="author-avatar">👨‍👩‍👧</div>
+                        <div>
+                            <h4>Иван Петров</h4>
+                            <p>12 мая 2023</p>
+                        </div>
+                    </div>
+                    <p>Наша семья участвовала в конкурсе "Космическая семья". Это было незабываемое приключение! Организация на высшем уровне.</p>
+                    <button class="btn-link" onclick="location.href='./pages/competition.html'">Подробнее о конкурсе</button>
+                </div>
+                <div class="review-card">
+                    <div class="review-author">
+                        <div class="author-avatar">👨‍👩‍👧</div>
+                        <div>
+                            <h4>Мария Сидорова</h4>
+                            <p>3 июня 2023</p>
+                        </div>
+                    </div>
+                    <p>Конкурс "Семейная галактика" помог нам по-новому взглянуть на наши отношения. Дети были в восторге!</p>
+                    <button class="btn-link" onclick="location.href='./pages/competition.html'">Подробнее о конкурсе</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <h2>Подписка на новости</h2>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="newsletter-email">Email</label>
+                    <input type="email" id="newsletter-email" placeholder="Введите ваш email">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacy-policy">
+                    <label for="privacy-policy">Согласие на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Подписаться</button>
+            </form>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <p>Телефон: <a href="tel:+74842234567">+7 (4842) 23-45-67</a></p>
+        <p>Email: <a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+    </footer>
+
+    <script src="./scripts/themeSwitcher.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

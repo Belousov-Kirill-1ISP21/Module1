@@ -1,0 +1,240 @@
+/* CSS Variables for Themes */
+:root {
+  /* Dark Theme (default) */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #f59e0b;
+  --border-color: #475569;
+  --error-color: #ef4444;
+  --success-color: #10b981;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #e2e8f0;
+  --bg-tertiary: #cbd5e1;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent-primary: #1d4ed8;
+  --accent-secondary: #d97706;
+  --border-color: #94a3b8;
+  --error-color: #dc2626;
+  --success-color: #059669;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--bg-secondary);
+  padding: 1% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-primary);
+  transition: color 0.3s ease;
+}
+
+.logo span {
+  color: var(--accent-secondary);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  color: var(--accent-primary);
+  background-color: var(--bg-tertiary);
+}
+
+.theme-toggle {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+/* Common Component Styles */
+.card {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 3%;
+  margin-bottom: 3%;
+  transition: background-color 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-primary);
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px var(--accent-primary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-secondary);
+  padding: 30px 5%;
+  margin-top: 50px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-top: 1px solid var(--border-color);
+}
+
+footer a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-secondary);
+}
+
+/* Responsive */
+@media (max-width: 796px) {
+  header {
+    flex-direction: column;
+    padding: 15px 5%;
+    gap: 15px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  nav ul li {
+    width: 100%;
+  }
+  
+  nav ul li a {
+    display: block;
+    width: 100%;
+  }
+  
+  .theme-toggle {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .container {
+    width: 95%;
+    padding: 15px 0;
+  }
+}
+
+/* Utility classes */
+.smooth-transition {
+  transition: all 0.3s ease;
+}
+
+/* Ensure all interactive elements have proper transitions */
+button, a, input, select, textarea {
+  transition: all 0.3s ease;
+}

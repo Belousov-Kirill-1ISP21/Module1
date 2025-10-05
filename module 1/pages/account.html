@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Моя семья – мой космос</title>
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/account.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Моя семья – <span>мой космос</span></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="../index.html#competitions">Конкурсы</a></li>
+                <li><button class="btn-logout">Выйти</button></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle">Светлая тема</button>
+    </header>
+
+    <div class="container">
+        <h1>Личный кабинет</h1>
+        
+        <div class="user-info">
+            <div class="user-avatar">👨‍👩‍👧</div>
+            <div class="user-details">
+                <h2>Иван Петров</h2>
+                <p>Email: ivan.petrov@example.com</p>
+                <p>Дата регистрации: 15 мая 2023</p>
+            </div>
+        </div>
+        
+        <div class="booking-form">
+            <h2>Запись на конкурс</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="competition">Конкурс *</label>
+                    <select id="competition" name="competition" required>
+                        <option value="">Выберите конкурс</option>
+                        <option value="cosmic-family">Космическая семья</option>
+                        <option value="family-galaxy">Семейная галактика</option>
+                        <option value="star-dance">Звездный танец</option>
+                        <option value="family-planet">Планета семьи</option>
+                        <option value="cosmic-story">Космическая история</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Дата *</label>
+                    <input type="date" id="date" name="date" value="2024-07-08" min="2024-07-08" max="2024-07-08" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Время *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Выберите время</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="participants">Количество участников *</label>
+                    <input type="number" id="participants" name="participants" min="1" max="10" required placeholder="Введите количество человек">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Записаться на конкурс</button>
+            </form>
+        </div>
+        
+        <div class="existing-bookings">
+            <h2>Мои записи</h2>
+            <div id="bookings-list">
+                <div class="booking-card">
+                    <div class="booking-header">
+                        <h3>Космическая семья</h3>
+                        <div class="booking-actions">
+                            <button class="btn-cancel">Отменить запись</button>
+                        </div>
+                    </div>
+                    <p><b>Дата:</b> 8 июля 2024</p>
+                    <p><b>Время:</b> 14:00</p>
+                    <p><b>Участников:</b> 3 человека</p>
+                    <p><b>Статус:</b> Подтверждена</p>
+                </div>
+                
+                <div class="booking-card">
+                    <div class="booking-header">
+                        <h3>Семейная галактика</h3>
+                        <div class="booking-actions">
+                            <button class="btn-cancel">Отменить запись</button>
+                        </div>
+                    </div>
+                    <p><b>Дата:</b> 8 июля 2024</p>
+                    <p><b>Время:</b> 16:00</p>
+                    <p><b>Участников:</b> 4 человека</p>
+                    <p><b>Статус:</b> Подтверждена</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Телефон: <a href="tel:+74842234567">+7 (4842) 23-45-67</a></p>
+        <p>Email: <a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+    </footer>
+
+    <script src="../scripts/themeSwitcher.js"></script>
+    <script src="../scripts/account.js"></script>
+</body>
+</html>
