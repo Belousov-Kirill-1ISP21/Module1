@@ -112,7 +112,6 @@ img {
   margin-bottom: 1%;
 }
 
-/* Стили для печати */
 @media print {
   header, footer, .competition-stats, .btn-primary, nav {
       display: none !important;
